@@ -1,6 +1,29 @@
 # prints all the letters A-Z#
+
 +++++[>+++++++++++++<-] get the 2nd set up as A
 ++[>>+++++++++++++<<-]>>- get a 25 counter we are looking at 3 0 null 1 A 2 25
 <.>[<+.>-]
 
 ############################################################
+
+#makes an 8x8 checkerboard pattern of x and o#
+
+++++++++++ newline pos 0
+>++++++++[>+++++++++++<-] 88 pos 3
+>>+++++++[<<+++++++++++>>-]<<++ 79 pos 2
+>>++++ 4 is now 4
+>++++ 5 is now 4 
+looking at 5
+[ while 5 isn't 0
+   <[ while 4 isn't 0 starting with x
+        <.<.>>-
+    ]
+    <<<.>>>++++
+    [ while 4 isn't 0 starting with o
+        <<.>.>-
+    ]
+    <<<.>>>++++
+    >-
+]
+
+simplified version: ++++++++++>++++++++[>+++++++++++<-]>>+++++++[<<+++++++++++>>-]<<++>>++++>++++[<[<.<.>>-]<<<.>>>++++[<<.>.>-]<<<.>>>++++>-]
