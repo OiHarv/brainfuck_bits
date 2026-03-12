@@ -45,3 +45,22 @@ better visualised:
     <<<.>>>++++
     >-
 ]
+
+######################################
+#IN PROGRESS: binary string to number
+input is i.e. "01001101" and it should spit out "077"
+currently, I only have it to it putting everything in cell 10, not dividing by 10 to get units, tens and hundreds but
+any brainfuck projects will be continued later.
+
+>,>,>,>,>,>,>,>,                                          == LA 9 #1i0 2tr9iINP
+[---------- ---------- ---------- ---------- --------<]   == LA 1 #2tr9i(m 48)
+>>>>>>>>                                                  == LA 9
+cell 10 is going to be the number
+[>+<-]                                                    == LA 9 #10i(p 1)if9i1
+<[>>++<<-]                                                == LA 8 #10i(p 2)if8i1
+<[>>>++++<<<-]                                            == LA 7 #10i(p 4)if7i1
+<[>>>>++++++++<<<<-]                                      == LA 6 #10i(p 8)if6i1
+<[>>>>>++++++++++ ++++++++<<<<<-]                         == LA 5 #10i(p 16)if5i1
+<[>++++[>>>>>++++++++<<<<<-]<-]                           == LA 4 #10i(p 32)if4i1
+<[>++++++++[>>>>>>++++++++<<<<<<-]<-]                     == LA 3 #10i(p 64)if3i1
+<[>++++++++++ ++++++[>>>>>>>++++++++++ ++++++<<<<<<<-]<-]
